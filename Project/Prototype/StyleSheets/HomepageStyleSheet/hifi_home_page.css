@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This is styling for the top navigation bar of the page*/
+nav {
+    display: inline-block;
+    position: relative;
+    left: 55%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -27px;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    text-decoration: underline;
+}
+
+nav ul li a#login {
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F98113;
+    border: 3px solid black;
+}
+
+nav ul li a#login:hover {
+    background-color: #c05f05;
+    text-decoration: none;
+}
+
+img#logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* This is the styling for the search bar of the page*/
+.search_bar {
+    width: 100%;
+    background-color: #D9D9D9;
+    border: 3px solid black;
+    padding: 20px;
+    padding-bottom: 210px;
+    border-radius: 10px;
+}
+
+.search_bar h1 {
+    padding-left: 3%;
+}
+
+.search_bar p {
+    padding-left: 3%;
+}
+
+#books {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.search_bar form {
+    padding-left: 3%;
+}
+
+#books {
+    position: relative;
+    float: right;
+    top: 0;
+}
+
+/* This is the styling for the news section of the page*/
+.news_section {
+    width: 100%;
+}
+
+#news_1 {
+    float: left;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#news_2 {
+    float: left;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.box {
+    border: 1px transparent black;
+    box-shadow: 0 4px 8px;
+    padding-bottom: 15px;
+}
+
+.row1 {
+    width: 100%;
+}
+
+.row2 {
+    width: 100%;
+}
+
+.row1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.row2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.row1 a:hover {
+    text-decoration: underline;
+}
+
+.row2 a:hover {
+    text-decoration: underline;
+}
+
+.courses {
+    position: relative;
+    width: 100%;
+    border: 1px transparent black;
+    padding-bottom: 300px;
+    box-shadow: 0 4px 8px;
+}
+
+.course1 {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding-left: 2px;
+}
+
+.course2 {
+    position: relative;
+    float: left;
+    width: 33.33%;
+}
+
+.course3 {
+    position: relative;
+    float: left;
+    width: 33.33%;
+}
+
+.my_courses img {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.my_courses a {
+    text-decoration: none;
+    color: black;
+}
+
+.my_courses a:hover {
+    text-decoration: underline;
+}
+
+.courses::after {
+    content: "";
+    clear: both;
+}
+
+/* This is the styling of the footer of the page*/
+footer {
+    position: absolute;
+    top: 1500px;
+    background-color: #F98113;
+    border: 2px solid black;
+    width: 99%;
+}
+
+#logo2 {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#contact {
+    display: inline;
+    position: relative;
+    left: 80%;
+}
+
+#facebook {
+    position: absolute;
+    left: 85%;
+    top: 30%;
+}
+
+#twitter {
+    position: absolute;
+    left: 89%;
+    top: 30%;
+}
+
+#instagram {
+    position: absolute;
+    left: 93%;
+    top: 30%;
+}
+
+#p_and_p {
+    position: absolute;
+    left: 78%;
+    top: 60%;
+}
+
+#t_and_c {
+    position: absolute;
+    left: 88%;
+    top: 60%;
+}
+
+
+
+

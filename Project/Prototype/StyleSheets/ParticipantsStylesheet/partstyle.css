@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* html and body CSS starts here */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+.courses-hifi {
+    position: relative;
+    width: 100%;
+    height: 2100px;
+    background-color: #eee;
+    overflow: hidden;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+.courses-hifi .div-wrapper {
+    /* this code is for the text that appears underneath the quiz, tutorial and lecture icons */
+    position: absolute;
+    width: 285px;
+    height: 50px;
+    top: 180px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* html and body CSS ends here */
+
+
+/* header CSS  starts here */
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .moodle-logo-2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    /* places image on the left */
+}
+
+.header .flex .nav {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    text-align: center;
+}
+
+.header .flex .nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.header .flex ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.header .flex li {
+    display: inline-block;
+    /* Display items horizontally */
+    justify-content: space-between;
+    /* adds some space between the items */
+    padding: .5rem 1rem;
+    /* adds some padding around the items */
+}
+
+.header .flex .nav a:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.header .flex .nav .active {
+    /* when it is on the active page, the text becomes bold */
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: end;
+}
+
+.btn :hover {
+    opacity: 85%;
+}
+
+/* header CSS ends here */
+
+
+
+/* divs for icons in each section ends here */
+
+.tutorial-header {
+    position: static;
+    top: 10px;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    z-index: 1000;
+}
+
+.tutorial-header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tutorial-header .flex .nav {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    text-align: left;
+}
+.tutorial-header .flex .nav .active {
+    /* when it is on the active page, the text becomes bold */
+    font-weight: bold;
+}
+
+.tutorial-header .flex .nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.tutorial-header .flex .nav a:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+:root {
+    --main-color: orange;
+    --red: red;
+    --light-color: #777;
+    --light-bg: #eee;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0,0,0,.2);
+    --black: rgba(26, 32, 44, 1);
+  }
+  
+  .courses-hifi {
+    position: relative;
+    width: 100%;
+    height: 1130px;
+    background-color: #eee;
+    overflow: hidden;
+
+}
+
+.courses-hifi .div-2 {
+    position: absolute;
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 90%;
+    height: 720px;
+    top: 50px;
+    left: 48px;
+    right: 20%;
+    display: inline-block;
+   
+}
+
+.courses-hifi .div-2 .main-info {
+     padding: 1rem 1.5rem;
+    font-size: 3.0rem;
+    color: var(--black);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    border-bottom: var(--border);
+}
+
+.courses-hifi .div-2 table {
+    width: 100%; /* Make sure the table takes full width of the container */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.courses-hifi .div-2 td,th {
+    padding: 10px; /* Adjust as needed */
+    text-align: left; /* Adjust alignment if necessary */
+    vertical-align: top; /* Align table data to the top of cells */
+    font-family: "Plus Jakarta Sans", Helvetica;
+}
+
+/* footer CSS starts here */
+.courses-hifi .footer {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    top: 880px;
+    left: 0;
+    background-color: transparent;
+}
+
+.courses-hifi .overlap {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #1f1f1f;
+}
+
+.courses-hifi .terms-conditions {
+    position: absolute;
+    width: 186px;
+    height: 30px;
+    top: 201px;
+    right: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .privacy-policy {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    top: 201px;
+    right: 270px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .footer .p {
+    position: absolute;
+    width: 380px;
+    height: 30px;
+    top: 201px;
+    left: 32px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .footer .contact-us {
+    position: absolute;
+    width: 332px;
+    height: 68px;
+    top: 35px;
+    right: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: right;
+    letter-spacing: -0.9px;
+    line-height: 67.5px;
+}
+
+.courses-hifi .footer .moodle-logo {
+    /* footer moodle logo */
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 60px;
+    left: 41px;
+    object-fit: cover;
+}
+
+.courses-hifi .footer .logo {
+    /* social media logo positioning and size */
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+}

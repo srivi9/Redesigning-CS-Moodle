@@ -1,0 +1,889 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* html and body CSS starts here */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+.courses-hifi {
+    position: relative;
+    width: 100%;
+    height: 2500px;
+    background-color: #eee;
+    overflow: hidden;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+.courses-hifi .div-wrapper {
+    /* this code is for the text that appears underneath the quiz, tutorial and lecture icons */
+    position: absolute;
+    width: 285px;
+    height: 50px;
+    top: 180px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* html and body CSS ends here */
+
+
+/* header CSS  starts here */
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .moodle-logo-2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    /* places image on the left */
+}
+
+.header .flex .nav {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    text-align: center;
+}
+
+.header .flex .nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.header .flex ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.header .flex li {
+    display: inline-block;
+    /* Display items horizontally */
+    justify-content: space-between;
+    /* adds some space between the items */
+    padding: .5rem 1rem;
+    /* adds some padding around the items */
+}
+
+.header .flex .nav a:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.header .flex .nav .active {
+    /* when it is on the active page, the text becomes bold */
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: end;
+}
+
+.btn :hover {
+    opacity: 85%;
+}
+
+/* header CSS ends here */
+
+
+/* top bar CSS starts here */
+.courses-hifi .top-bar {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 0;
+    left: 0;
+}
+
+.courses-hifi .course-main {
+    position: relative;
+    width: 100%;
+    height: 464px;
+    top: -7px;
+    background-image: url(../../Images/img/student-online-class2.jpg);
+    background-size: 100% 100%;
+}
+
+.courses-hifi .course-title {
+    position: absolute;
+    width: 652px;
+    height: 46px;
+    top: 142px;
+    left: 100px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: -1.8px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.courses-hifi .course-info {
+    position: absolute;
+    width: 534px;
+    height: 64px;
+    top: 215px;
+    left: 105px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 32px;
+}
+
+/* search bar css starts here */
+.courses-hifi form {
+    position: absolute;
+    background-color: var(--white);
+    width: 300px;
+    height: 44px;
+    top: 300px;
+    left: 105px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.courses-hifi input {
+    all: unset;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    color: orange;
+    height: 100%;
+    width: 100%;
+    padding: 4px 25px;
+}
+
+.courses-hifi ::placeholder {
+    color: orange;
+    opacity: 0.7; 
+}
+
+.courses-hifi button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+  
+.courses-hifi svg {
+    color: orange;
+    fill: orange;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+}
+/* search bar CSS ends here */
+
+/* top bar CSS ends here */
+
+
+/* course bar starts here */
+.courses-hifi .course-bar {
+    position: absolute;
+    width: 96%;
+    height: 390px;
+    top: 500px;
+    left: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.courses-hifi .courses-title {
+    position: absolute;
+    width: 183px;
+    top: 20px;
+    left: 48px;
+    font-family: "DM Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 45px;
+    letter-spacing: -0.3px;
+    line-height: normal;
+}
+
+.courses-hifi .course-icons {
+    position: absolute;
+    width: 285px;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    left: 0;
+}
+
+.courses-hifi .year1 {
+    position: absolute;
+    height: 28px;
+    top: 11px;
+    left: 55px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .year2 {
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .year3 {
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .year4 {
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* course bar ends here */
+
+
+/* quiz bar CSS starts here */
+.courses-hifi .quiz-bar {
+    position: absolute;
+    width: 96%;
+    height: 390px;
+    top: 940px;
+    left: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.courses-hifi .quiz-title {
+    position: absolute;
+    width: 183px;
+    top: 20px;
+    left: 48px;
+    font-family: "DM Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 45px;
+    letter-spacing: -0.3px;
+    line-height: normal;
+}
+
+.courses-hifi .quiz-icons {
+    position: absolute;
+    width: 285px;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    left: 0;
+}
+
+/*.courses-hifi .quiz-1 {
+    position: absolute;
+    width: 287px;
+    height: 230px;
+    top: 99px;
+    left: 48px;
+}*/
+
+.courses-hifi .database-text {
+    position: absolute;
+    height: 28px;
+    top: 11px;
+    left: 60px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .html-text {
+    position: absolute;
+    top: 11px;
+    left: 48px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .os-text {
+    position: absolute;
+    top: 11px;
+    left: 55px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .discrete-math-text {
+    position: absolute;
+    top: 11px;
+    left: 35px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .php-text {
+    position: absolute;
+    top: 11px;
+    left: 48px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* quiz bar CSS ends here */
+
+
+
+/* tutorial bar CSS starts here */
+.courses-hifi .tutorial-bar {
+    position: absolute;
+    width: 96%;
+    height: 390px;
+    top: 1380px;
+    left: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.courses-hifi .tutorial-title {
+    position: absolute;
+    width: 222px;
+    top: 20px;
+    left: 48px;
+    font-family: "DM Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 45px;
+    letter-spacing: -0.3px;
+    line-height: normal;
+}
+
+.courses-hifi .tutorial-icons {
+    position: absolute;
+    width: 285px;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    left: 0;
+}
+
+.courses-hifi .mobile-text {
+    position: absolute;
+    top: 11px;
+    left: 47px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .comp-arch-text {
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .sys-prog-text {
+    position: absolute;
+    top: 11px;
+    left: 22px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .javascript-text {
+    position: absolute;
+    top: 11px;
+    left: 82px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .cybersecurity-text {
+    position: absolute;
+    top: 11px;
+    left: 60px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* tutorial bar CSS ends here */
+
+
+
+/* lecture bar CSS starts here */
+.courses-hifi .lecture-bar {
+    position: absolute;
+    width: 96%;
+    height: 390px;
+    top: 1820px;
+    left: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    overflow: auto;
+    white-space: normal;
+}
+
+.courses-hifi .lecture-title {
+    position: absolute;
+    width: 305px;
+    top: 20px;
+    left: 48px;
+    font-family: "DM Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 45px;
+    letter-spacing: -0.3px;
+    line-height: normal;
+}
+
+.courses-hifi .lecture-icons {
+    position: absolute;
+    width: 285px;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    left: 0;
+}
+
+.courses-hifi .hci-text {
+    position: absolute;
+    top: 11px;
+    left: 65px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .web-tech-text {
+    position: absolute;
+    top: 11px;
+    left: 43px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .soft-eng-text {
+    position: absolute;
+    top: 11px;
+    left: 2px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .algorithms-text {
+    position: absolute;
+    top: 11px;
+    left: 37px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.courses-hifi .data-structures-text {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* lecture bar CSS ends here */
+
+
+
+/* footer CSS starts here */
+.courses-hifi .footer {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    top: 2250px;
+    left: 0;
+    background-color: transparent;
+}
+
+.courses-hifi .overlap {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #1f1f1f;
+}
+
+.courses-hifi .terms-conditions {
+    position: absolute;
+    width: 186px;
+    height: 30px;
+    top: 201px;
+    right: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .privacy-policy {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    top: 201px;
+    right: 270px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .footer .p {
+    position: absolute;
+    width: 380px;
+    height: 30px;
+    top: 201px;
+    left: 32px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .footer .contact-us {
+    position: absolute;
+    width: 332px;
+    height: 68px;
+    top: 35px;
+    right: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: right;
+    letter-spacing: -0.9px;
+    line-height: 67.5px;
+}
+
+.courses-hifi .footer .moodle-logo {
+    /* footer moodle logo */
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 60px;
+    left: 41px;
+    object-fit: cover;
+}
+
+.courses-hifi .footer .logo {
+    /* social media logo positioning and size */
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+}
+
+.courses-hifi .footer .facebook {
+    /* facebook logo */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 127px;
+    right: 155px;
+}
+
+.courses-hifi .footer .twitter {
+    /* twitter media */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 127px;
+    right: 100px;
+}
+
+.courses-hifi .footer .instagram {
+    /* instagram logo */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 127px;
+    right: 45px;
+}
+
+/* footer CSS ends here */
+
+
+/* divs for icons in each section starts here */
+.courses-hifi .div-2 {
+    position: absolute;
+    width: 287px;
+    height: 230px;
+    top: 99px;
+    left: 48px;
+}
+
+.courses-hifi .div-2 a:hover {
+    opacity: 85%;
+}
+
+.courses-hifi .div-3 {
+    position: absolute;
+    width: 287px;
+    height: 230px;
+    top: 99px;
+    left: 408px;
+}
+
+.courses-hifi .div-3 a:hover {
+    opacity: 85%;
+}
+
+
+.courses-hifi .div-4 {
+    position: absolute;
+    width: 287px;
+    height: 230px;
+    top: 99px;
+    left: 769px;
+}
+
+.courses-hifi .div-4 a:hover {
+    opacity: 85%;
+}
+
+.courses-hifi .div-5 {
+    position: absolute;
+    width: 287px;
+    height: 230px;
+    top: 99px;
+    left: 1130px;
+}
+
+.courses-hifi .div-5 a:hover {
+    opacity: 85%;
+}
+
+.courses-hifi .div-6 {
+    position: absolute;
+    width: 287px;
+    height: 230px;
+    top: 99px;
+    left: 1491px;
+}
+
+.courses-hifi .div-6 a:hover {
+    opacity: 85%;
+}
+
+.courses-hifi .extra {
+    position: absolute;
+    width: 10px;
+    height: 230px;
+    top: 99px;
+    left: 1825px;
+}
+
+.livelecturesusers {
+    text-align: right;
+    margin-right: 100px;
+    font-size: large;
+    color: rgb(65, 40, 3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: solid;
+    border: 2px solid #000;
+    background-color: white;
+}
+.comment {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #F98113;
+    border-radius: 5px;
+    margin-left: 900px;
+    background-color: rgb(233, 191, 112);
+}
+/* divs for icons in each section ends here */

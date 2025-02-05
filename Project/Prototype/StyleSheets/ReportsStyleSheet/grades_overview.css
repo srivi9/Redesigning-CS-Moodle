@@ -1,0 +1,151 @@
+/* This styling is for the whole page */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:whitesmoke;
+}
+
+/* This styling is for the top navigation bar */
+.moodle-logo-2 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.nav {
+    display: inline;
+    padding-left: 50%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: .5rem 1rem;;
+}
+
+.nav a:hover {
+    background-color: beige;
+}
+
+.nav a:active {
+    background-color: grey;
+}
+
+
+.topnav ul {
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+
+.topnav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+#bar::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 82%;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}
+
+.topnav {
+    width: 100%;
+    background-color: white;
+    border: 1px transparent black;
+    box-shadow: 0 1px 8px;
+}
+
+/* This styling is for the user's profile picture and name*/
+.user_information img {
+    border: 3px solid black;
+    border-radius: 100%;
+    position: relative;
+    left: 5%;
+    top: 15%;
+    display: inline;
+    vertical-align: middle;
+}
+
+
+#name {
+    display: inline;
+    padding-left: 5%;
+}
+
+.user_information {
+    padding-top: 1%;
+}
+
+/* This styling is for the courses section of the page */
+#heading {
+    position: relative;
+    left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.course_links {
+    position: relative;
+    left: 5%;
+    width: 95%;
+}
+
+.course_links th {
+    text-align: left;
+}
+
+.course_links th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid gray;
+}
+
+.course_links td:hover {
+    background-color: beige;
+}
+
+.courses {
+    background-color: white;
+    border: 1px transparent black;
+    box-shadow: 0 1px 8px;
+    border-collapse: collapse;
+}
+
+/* This styling is for the footer of the page*/
+footer {
+    position: relative;
+    margin-top: 5%;
+    background-color: #F98113;
+    border: 2px solid black;
+}
+
+#logo_2 {
+    display: inline;
+}
+
+.contact_block {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 80%;
+}
+
+#t_and_c {
+    position: relative;
+    float: right;
+    padding-right: 2%;
+}
+
+#p_and_p {
+    position: relative;
+    float: right;
+    padding-right: 2%;
+}

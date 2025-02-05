@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* html and body CSS starts here */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+.courses-hifi {
+    position: relative;
+    width: 100%;
+    height: 1130px;
+    background-color: #eee;
+    overflow: hidden;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+.courses-hifi .div-wrapper {
+    /* this code is for the text that appears underneath the quiz, tutorial and lecture icons */
+    position: absolute;
+    width: 285px;
+    height: 50px;
+    top: 180px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* html and body CSS ends here */
+
+
+/* header CSS  starts here */
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .moodle-logo-2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    /* places image on the left */
+}
+
+.header .flex .nav {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    text-align: center;
+}
+
+.header .flex .nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.header .flex ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.header .flex li {
+    display: inline-block;
+    /* Display items horizontally */
+    justify-content: space-between;
+    /* adds some space between the items */
+    padding: .5rem 1rem;
+    /* adds some padding around the items */
+}
+
+.header .flex .nav a:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.header .flex .nav .active {
+    /* when it is on the active page, the text becomes bold */
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: end;
+}
+
+.courses-hifi .flex-btn {
+    margin-top: 15px;
+}
+/* header CSS ends here */
+
+
+.courses-hifi .tutorial-bar {
+    position: absolute;
+    width: 96%;
+    height: 750px;
+    top: 50px;
+    left: 2%;
+    right: 2%;
+    display: grid;
+    grid-template-columns: repeat(autofit, 35rem);
+    gap: 24%;
+    align-items: flex-start;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    overflow: auto;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.courses-hifi .title {
+    position: absolute;
+    width: 183px;
+    top: 2%;
+    left: 3.7%;
+    font-family: "DM Sans", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    line-height: normal;
+}
+
+.courses-hifi .tutorial-bar .info-1 {
+    position: absolute;
+    top: 100px;
+    left: 4%;
+    /*width: 290px;
+    height: 260px;*/
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-2 {
+    position: absolute;
+    top: 100px;
+    left: 28%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-3 {
+    position: absolute;
+    top: 100px;
+    left: 52%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-4 {
+    position: absolute;
+    top: 100px;
+    left: 76%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-5 {
+    position: absolute;
+    top: 400px;
+    left: 4%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-6 {
+    position: absolute;
+    top: 400px;
+    left: 28%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-7 {
+    position: absolute;
+    top: 400px;
+    left: 52%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-8 {
+    position: absolute;
+    top: 400px;
+    left: 76%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-9 {
+    position: absolute;
+    top: 700px;
+    left: 4%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-10 {
+    position: absolute;
+    top: 700px;
+    left: 28%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-11 {
+    position: absolute;
+    top: 700px;
+    left: 52%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-12 {
+    position: absolute;
+    top: 700px;
+    left: 76%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-13 {
+    position: absolute;
+    top: 1000px;
+    left: 4%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-14 {
+    position: absolute;
+    top: 1000px;
+    left: 28%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-15 {
+    position: absolute;
+    top: 1000px;
+    left: 52%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-16 {
+    position: absolute;
+    top: 1000px;
+    left: 76%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-17 {
+    position: absolute;
+    top: 1300px;
+    left: 4%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .info-18 {
+    position: absolute;
+    top: 1300px;
+    left: 28%;
+    width: 20%;
+    height: 35%;
+    right: 2%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.courses-hifi .tutorial-bar .view-all {
+    position: absolute;
+    top: 865px;
+    left: 45%;
+}
+
+.courses-hifi .tutorial-bar .main {
+    position: absolute;
+    top: 100px;
+    left: 27%;
+    width: 69%;
+    height: 600px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-bg);
+    padding: 3rem 2rem;
+    text-align: center;
+    overflow: auto;
+}
+
+.courses-hifi .tutorial-bar img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem .5rem .5rem .5rem;
+    object-fit: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.courses-hifi .tutorial-bar h3 {
+    padding: .5rem 0;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: -1.8;
+}
+
+.courses-hifi .tutorial-bar a {
+    padding: .5rem 0;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 0.7rem;
+    color: var(--black);
+    line-height: -1.8;
+}
+
+
+/* main section content starts here */
+.courses-hifi .tutorial-bar .cert-title {
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 16px;
+    top: 5px;
+    left: 80px;
+}
+
+.courses-hifi .tutorial-bar a:link {
+    color: var(--black);
+}
+
+.courses-hifi .tutorial-bar a:visited {
+    color: var(--black);
+}
+
+.courses-hifi .tutorial-bar a:hover {
+    opacity: 85%;
+}
+
+.courses-hifi .tutorial-bar a:active {
+    color: var(--black);
+}
+/* main section CSS ends here */
+
+
+
+
+
+
+/* footer CSS starts here */
+.courses-hifi .footer {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    top: 880px;
+    left: 0;
+    background-color: transparent;
+}
+
+.courses-hifi .overlap {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #1f1f1f;
+}
+
+.courses-hifi .terms-conditions {
+    position: absolute;
+    width: 186px;
+    height: 30px;
+    top: 201px;
+    right: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .privacy-policy {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    top: 201px;
+    right: 270px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .footer .p {
+    position: absolute;
+    width: 380px;
+    height: 30px;
+    top: 201px;
+    left: 32px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}
+
+.courses-hifi .footer .contact-us {
+    position: absolute;
+    width: 332px;
+    height: 68px;
+    top: 35px;
+    right: 20px;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: right;
+    letter-spacing: -0.9px;
+    line-height: 67.5px;
+}
+
+.courses-hifi .footer .moodle-logo {
+    /* footer moodle logo */
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 60px;
+    left: 41px;
+    object-fit: cover;
+}
+
+.courses-hifi .footer .logo {
+    /* social media logo positioning and size */
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+}
+
+.courses-hifi .footer .facebook {
+    /* facebook logo */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 127px;
+    right: 155px;
+}
+
+.courses-hifi .footer .twitter {
+    /* twitter media */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 127px;
+    right: 100px;
+}
+
+.courses-hifi .footer .instagram {
+    /* instagram logo */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 127px;
+    right: 45px;
+}
+/* footer CSS ends here */
+
+
+/* divs for icons in each section starts here */
+.courses-hifi .extra1 {
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    top: 1000px;
+    left: 48px;
+}
+
+.courses-hifi .extra2 {
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    top: 1600px;
+    left: 48px;
+}
+/* divs for icons in each section ends here */
+
+/* responsiveness */
+@media (max-width: 800px) {
+    .courses-hifi .tutorial-bar .info-1  {
+        top: 100px;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-2  {
+        top: 260px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-3  {
+        top: 420px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-4  {
+        top: 580px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-5  {
+        top: 740px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-6  {
+        top: 900px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-7  {
+        top: 1060px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    
+    .courses-hifi .tutorial-bar .info-8  {
+        top: 1220px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-9  {
+        top: 1380px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-10  {
+        top: 1540px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-11  {
+        top: 1700px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-12  {
+        top: 1860px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-13  {
+        top: 2020px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-14  {
+        top: 2180px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-15  {
+        top: 2340px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-16  {
+        top: 2500px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-17  {
+        top: 2660px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar .info-18  {
+        top: 2820px;
+        left: 4%;
+        width: 92%;
+        height: 18%;
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses-hifi .tutorial-bar img {
+        height: 100px;
+        width: 100px;
+        left: 2%;
+    }
+
+    .courses-hifi .tutorial-bar .cert-title {
+        position: absolute;
+        top: 50px;
+        left: 140px;
+    }
+}

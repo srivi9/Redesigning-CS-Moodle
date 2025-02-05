@@ -1,0 +1,431 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    /* Display items horizontally */
+    margin-right: 10px;
+    /* Add some spacing between items */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+.welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.small-image {
+    height: 35px;
+    /* Adjust the height as needed */
+}
+
+.moodle {
+    height: 35px;
+    /* Adjust the height as needed */
+}
+
+.button-link {
+    display: inline-block;
+    /* Make the links behave like blocks */
+    text-decoration: none;
+    /* Remove underline from the links */
+}
+.text-link {
+    display: inline-block;
+    /* Make the links behave like blocks */
+    text-decoration:wavy;
+    /* Remove underline from the links */
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+#reports h3{
+    margin-left: 10px;
+    margin-top: -0.005px;
+}
+
+.button-image {
+    display: block;
+    /* Make the images behave like blocks */
+}
+
+/* Optionally, add styles for hover effect or any other desired styles */
+.button-link:hover {
+    opacity: 0.8;
+    /* Example: Reduce opacity on hover */
+}
+
+#profile_pic {
+
+    float: right;
+    position: relative;
+    bottom: 80px;
+    /* Adjust the value as needed to move the picture further down */
+    border: 7px solid;
+    /* Adjust border properties as needed */
+    border-radius: 50%;
+    /* Make the border circular */
+    left: -180px;
+    top: -70px;
+}
+
+#personal_details {
+    border: solid 2px;
+    border-radius: 2%;
+    padding-left: 20px;
+    width: 20%;
+    float: left;
+    position: relative;
+    left: 50px;
+    background-color: #FAC991;
+    padding: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    height: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#my_courses {
+    border: solid 2px;
+    border-color: transparent;
+    border-radius: 2%;
+    width: 39.7%;
+    float: left;
+    position: relative;
+    left: 80px;
+    background-color: #FAC991;
+    margin-left: 50px;
+    padding: 1px;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 210px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#my_courses h3{
+    margin-bottom: -10px;
+}
+
+.imageshorizontal-list {
+    margin-left: 80px; /* Adjust this value as needed */
+}
+
+
+#reports {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 450px;
+    bottom: 15px;
+    border: solid 2px;
+    border-radius: 2%;
+    background-color: #FAC991;
+    left: 85px;
+    height: 100px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.greybox {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 360px;
+    outline-style: solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+.footer {
+    background-color: #F98113;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    width: 100%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+/* Base styles */
+
+/* Your existing CSS goes here */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+    /* Adjust the navigation */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the header */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust the profile picture */
+    #profile_pic img {
+        size: 10px;
+    }
+
+    /* Adjust the greybox sections */
+    .greybox {
+        padding: 10px;
+    }
+
+    /* Adjust the footer */
+    .moodle {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: calc(100% - 40px);
+        /* Take full width with padding */
+        margin-right: 0;
+        /* Remove right margin to prevent overflow */
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    #personal_details,
+    #my_courses,
+    #reports {
+        font-size: 10px;
+
+    }
+
+    #reports {
+        position: absolute;
+        top: 457px;
+
+    }
+
+    #my_courses {
+        position: absolute;
+        top: 200px;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #profile_pic {
+        margin-top: 0;
+        /* Reset the top margin */
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+    }
+
+    #profile_pic img {
+        width: 100px;
+        /* Shrink the image size */
+        height: 100px;
+        /* Shrink the image size */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #personal_details {
+
+
+        float: left;
+        margin: 10px 10px;
+        top: 50px;
+        width: 30%;
+        clear: both;
+
+        /* Add space between sections */
+    }
+
+    #reports {
+        position: absolute;
+        top: 300px;
+        width: calc(40% - 40px);
+        /* Calculate width to fit within grey box */
+        border: solid 2px;
+        border-radius: 4%;
+        padding: 10px;
+        background-color: #FAC991;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .button-list li {
+        display: inline-block;
+        /* Display list items inline */
+        margin-right: 10px;
+        /* Add some spacing between list items */
+    }
+
+    .button-image {
+        max-width: calc(70% - 5px);
+        /* Set maximum width to 50% of viewport width minus margin */
+        display: inline-block;
+        /* Ensure images are displayed as blocks */
+        margin: 0 auto;
+        /* Center images within their parent container */
+    }
+}
+
+.contactdetails h2 {
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 625px;
+    margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.icons {
+    position: absolute;
+    right: 20px;
+    top: 665px;
+    margin-top: 60px;
+}
+
+.icons img {
+    size: 30px;
+}
+
+.rules h5 {
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 705px;
+    margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-icon {
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust spacing between buttons */
+}
+
+.button-icon img {
+    width: 50px;
+    /* Set the width of the buttons */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: none;
+    /* Remove border from the images */
+}
+
+/* Style for the buttons */
+.button-icon {
+    /* Change to your preferred background color */
+    color: white;
+    /* Text color */
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.button-icon:hover {
+    background-color: #0056b3;
+    /* Change background color on hover */
+}
+
+.courseicons {
+    display: block;
+    width: 80px; /* Adjust width as needed */
+    height: auto; /* Let the height adjust proportionally */
+    margin: 10px auto; /* Add some space between icons and center them horizontally */
+    border: transparent; /* Add a border */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Add a box shadow for a 3D effect */
+}
+
+
+
+
+.imageshorizontal-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imageshorizontal-list li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.db {
+    text-indent: 20px;
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+:root {
+    --main-color: orange;
+    --red: red;
+    --light-color: #777;
+    --light-bg: #eee;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0,0,0,.2);
+    --black: rgba(26, 32, 44, 1);
+  }
+
+  .custom-height {
+    height: 80px; /* Adjust the height as needed */
+}
+
+
+
+/* Additional media queries can be added for smaller screen sizes if needed */
